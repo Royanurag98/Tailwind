@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class=" bg-black font-bold text-white p-3 flex">Font Family : <p class="text-[15px]"> CSS frameworks like
+            Tailwind CSS, you can use
+            utility classes to quickly apply specific font families to your elements, like font-sans, font-serif, and
+        </p>
+    </h1>
+
+    <div class="max-w-[900px] border-solid border-4 border-green-500 mx-5 text-black my-5">
+
+        <p class="font-sans  bg-black text-white font-bold">font-sans ...</p>
+        <p class="font-sans ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis iusto recusandae at
+            facere aliquam doloribus impedit maxime ipsum et ducimus dolor, suscipit culpa neque repellat, sed esse
+            mollitia? Magni, quasi.</p> <br><br>
+
+        <p class="font-serif bg-black text-white font-bold">font-serif...</p>
+        <p class="font-serif ...">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam repudiandae,
+            dignissimos quibusdam reprehenderit dolores repellendus aliquam accusamus saepe nemo voluptatum, nulla
+            laudantium amet totam vel officiis debitis in sed! Nemo.</p><br><br>
+
+        <p class="font-mono  bg-black text-white font-bold ">font-mono </p>
+        <p class="font-mono ...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore incidunt ullam
+            provident,illum molestiae explicabo officia ab corrupti cumque consequuntur alias accusantium consectetur
+            pariatur quos nisi. Aperiam corrupti consequuntur praesentium!</p>
+    </div>
+
+    <div>
+        <h1 class=" bg-black font-bold text-white p-3 flex  ">Applying conditionally : <p class="text-[15px]"> CSS
+                frameworks allow you can use utility classes to quickly apply specific font families to your elements conditionally. like Hover,
+                focus, and Breakpoints.
+            </p>
+        </h1>
+    </div>
+        <div class="max-w-[900px] border-solid border-4 border-green-500 mx-5 text-black my-5">
+
+
+            <p class="font-sans  bg-black text-white font-bold">Hover ...</p>
+            <p class="font-sans hover:font-serif ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                iusto recusandae atfacere aliquam doloribus impedit maxime ipsum et ducimus dolor, suscipit culpa neque repellat, sed esse
+                mollitia? Magni, quasi.</p> <br><br>
+
+            <p class="font-serif bg-black text-white font-bold">Active ...</p>
+            <p class="font-serif  hover:bg-green-600 active:text-yellow-400 focus:text-red-700">Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Quisquam repudiandae,
+                dignissimos quibusdam reprehenderit dolores repellendus aliquam accusamus saepe nemo voluptatum, nulla
+                laudantium amet totam vel officiis debitis in sed! Nemo.</p><br><br>
+
+            <p class="font-mono  bg-black text-white font-bold ">Breakpoints... </p>
+            <p class="font-mono lg:text-red-600 md:text-green-600">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolore incidunt ullamprovident,illum molestiae explicabo officia ab corrupti cumque consequuntur alias accusantium
+                consectetur pariatur quos nisi. Aperiam corrupti consequuntur praesentium!</p>
+        </div>
+
+        <ul role="list" class=" max-w-[700px] border-solid border-4 border-black p-6 divide-y divide-slate-200 ">
+      
+              <!-- Remove top/bottom padding when first/last child -->
+              <li class="flex py-4 first:pt-1 last:pb-1">
+                <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+                <div class="ml-3 overflow-hidden">
+                  <p class="text-sm font-medium text-slate-900">person.name</p>
+                  <p class="text-sm text-slate-500 truncate">person.email</p>
+                </div>
+              </li>
+              <li class="flex py-4 first:pt-0 last:pb-0">
+                <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+                <div class="ml-3 overflow-hidden">
+                  <p class="text-sm font-medium text-slate-900">person.name</p>
+                  <p class="text-sm text-slate-500 truncate">person.email</p>
+                </div>
+              </li>
+              <li class="flex py-4 first:pt-0 last:pb-0">
+                <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+                <div class="ml-3 overflow-hidden">
+                  <p class="text-sm font-medium text-slate-900">person.name</p>
+                  <p class="text-sm text-slate-500 truncate">person.email</p>
+                </div>
+              </li>
+              <li class="flex py-4 first:pt-0 last:pb-0">
+                <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+                <div class="ml-3 overflow-hidden">
+                  <p class="text-sm font-medium text-slate-900">person.name</p>
+                  <p class="text-sm text-slate-500 truncate">person.email</p>
+                </div>
+              </li>
+              <li class="flex py-4 first:pt-0 last:pb-0">
+                <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+                <div class="ml-3 overflow-hidden">
+                  <p class="text-sm font-medium text-slate-900">person.name</p>
+                  <p class="text-sm text-slate-500 truncate">person.email</p>
+                </div>
+              </li>
+          
+          </ul>
+     
+
+
+
+
+    </div>
+</body>
+
+</html>
