@@ -3,7 +3,7 @@ import "./App.css";
 import img from './assets/images.png'
 
 function App() {
-console.log(sessionStorage.getItem('themes'))
+
 if(sessionStorage.getItem('themes')==='dark'){
   document.documentElement.classList.toggle('dark')
 }
