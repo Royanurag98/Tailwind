@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class=" bg-black text-center w-full text-white font-bold p-3 text-[20px] ">Display Properties</h1>
+    <div class="w-full bg-gray-600  flex justify-center flex-wrap p-5 gap-5">
+
+        <div class="w-[1200px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">CSS_Position_Static</h1>
+
+            <h1 class="w-full text-black text-[15px] font-bold ">
+                1.position: static :- HTML elements are positioned static by default .Static positioned elements are not affected by the top, bottom, left, right and Z-Index properties </h1>
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center space-x-5 ">
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+            </div>
+        </div>
+        <div class="w-[1200px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">CSS_Position_Realitive</h1>
+            <h1 class="w-full text-black text-[15px] font-bold ">
+                2.position: relative :- We can positioned any element corresponding to the current window using top, right, bottom and left properties. And these properties determine the final location of positioned elements. and we also observe that when we positioned the element through relative property element is positioned but gap of that element is exist </h1>
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center space-x-5 ">
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left   ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left relative top-6 left-24   ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+            </div>
+        </div>
+
+        <div class="w-[1200px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold "> CSS_Position_Absolut</h1>
+            <h1 class="w-full text-black text-[15px] font-bold "> 
+                3.position: absolute :- The element is positioned relative to its closest positioned ancestor using top, right, bottom and left properties. And these properties determine the final location of positioned elements. and we also observe that when we positioned the element through absolute property. element is positioned and gap of that element is also elemenate
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center space-x-5 ">
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left   ">box</div>
+                <div class="size-[150px] bg-yellow-400 border-8 border-green-800 float-left absolute right-[550px] top-[1000px]   ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+            </div>
+        </div>
+      
+        <div class="w-[1200px] bg-white p-5 rounded-xl ">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">  CSS_Position_Fixed</h1>
+            <h1 class="w-full text-black text-[15px] font-bold "> 
+               
+                4. position: fixed :- it always stays in the same place even if the page is scrolled. this element is stack till the range of window size. The top, right, bottom, and left properties are used to position the element.
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center space-x-5  ">
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left   ">box</div>
+                <div class="size-[150px] bg-yellow-400 border-8 border-green-800 float-left   ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+            </div>
+        </div>
+
+        <div class="w-[1200px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">CSS_Position_sticky</h1>
+            <h1 class="w-full text-black text-[15px] font-bold "> 
+           
+                5.position: sticky :-it always stays in the same place even if the page is scrolled. . this element is stack till the range of parent container.The top, right, bottom, and left properties are used to position the element.
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center space-x-5 ">
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left   ">box</div>
+                <div class="size-[150px] bg-yellow-400 border-8 border-green-800 float-left sticky left-[300px]   ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+                <div class="size-[150px] bg-green-400 border-8 border-green-800 float-left  ">box</div>
+            </div>
+        </div>
+        
+        <div class="w-[1200px] h-[600px] bg-white p-5 rounded-xl">
+        </div>
+     
+    </div>
+
+</body>
+</html>
+
+

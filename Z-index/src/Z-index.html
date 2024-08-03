@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class=" bg-black text-center w-full text-white font-bold p-3 text-[20px] ">Z-Index</h1>
+    <div class="w-full bg-gray-600  flex justify-center flex-wrap p-5 gap-5">
+
+        <div class="w-[600px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">Z-Index : Z-50, z-40, z-30, z-20, z-10, z-0</h1>
+
+            <div class="border-2 h-[200px] border-red-600 flex justify-center items-center pl-8  ">
+                <div class="size-[100px] text-center rounded-full pt-8 font-bold text-white    z-50   bg-red-600 border-4 border-white   ">1</div>
+                <div class="size-[100px] text-center rounded-full pt-8 font-bold text-white relative right-[30px] z-40    bg-orange-600 border-4 border-white">2</div>
+                <div class="size-[100px] text-center rounded-full pt-8 font-bold text-white relative right-[60px] z-30    bg-blue-600 border-4 border-white   ">3</div>
+                <div class="size-[100px] text-center rounded-full pt-8 font-bold text-white relative right-[90px] z-20   bg-red-900 border-4 border-white   ">4</div>
+                <div class="size-[100px] text-center rounded-full pt-8 font-bold text-white relative right-[120px] z-10   bg-yellow-800 border-4 border-black    ">5</div>
+                
+            </div>
+        </div>
+        <div class="w-[600px] bg-white p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold ">Z-Index : Z-50, z-40, z-30, z-20, z-10, z-0 </h1>
+            <div class="border-2 h-[200px] border-red-600 flex p-5  ">
+                <div class="size-[100px] bg-green-400 border-8 border-green-800     ">box</div>
+                <div class="size-[100px] bg-orange-400 border-8 border-orange-600 relative right-[60px] top-9 ">box</div>
+                <div class="size-[100px] bg-pink-600 border-8 border-rose-700     relative right-[120px] top-16 ">box</div>
+                <div class="size-[100px] bg-blue-500 border-8 border-blue-700     relative right-[160px] top-24  ">box</div>
+             
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

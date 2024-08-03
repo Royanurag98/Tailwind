@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class=" bg-black text-center w-full text-white font-bold p-3 text-[20px] ">Mix Blend Mode</h1>
+    <div class="w-full bg-gray-600  flex justify-center flex-wrap px-52 py-10 gap-5">
+
+        <div class="w-[500px] exs:max-sm:w-[350px] bg-white  p-5 rounded-xl">
+            <h1 class="w-full text-red-500 text-[25px] font-bold "> mix-blend-normal</h1>
+            <div class="w-full exs:max-sm:w-[300px] exs:max-sm:h-[400px] h-[600px] border-solid border-2  border-gray-300 shadow-2xl rounded-lg flex  flex-col  space-y-20 ">
+
+                <div class=" relative  h-[430px] exs:max-sm:h-[300px] pl-20 pt-5  ">
+                    <div class=" T1 w-[300px] h-[430px] exs:max-sm:size-[200px] bg-white absolute flex flex-wrap">
+                        <img class="w-[300px] h-[400px] exs:max-sm:size-[200px] object-cover "
+                            src="https://www.griffingears.com/wp-content/uploads/2024/01/IMG_7286.jpg.webp" alt="">
+                    </div>
+
+                    <div class="T2 w-[300px] h-[430px] exs:max-sm:size-[200px] bg-white absolute flex flex-wrap     ">
+                        <img class="w-[300px] h-[430px] exs:max-sm:size-[200px]  "
+                            src="https://www.muscletech.in/wp-content/uploads/2024/05/mt-round-neck-white-tshirt-men.webp"
+                            alt="">
+                    </div>
+
+                    <div class=" T3 w-[300px] h-[430px] exs:max-sm:size-[200px] bg-white  absolute flex flex-wrap    ">
+                        <img class="w-[300px] h-[430px] exs:max-sm:size-[200px] object-cover "
+                            src="https://images.vestiairecollective.com/images/resized/w=1246,q=75,f=auto,/produit/black-cotton-maison-martin-margiela-t-shirt-43696513-1_3.jpg"
+                            alt="">
+                    </div>
+
+                </div>
+           
+            </div>
+           
+        </div>
+    </div>
+
+   <script>
+
+    var box1=document.querySelector('.T1')
+    var box2=document.querySelector('.T2')
+    var box3=document.querySelector('.T3')
+    const black = () => {
+        box3.classList.remove("z-50");
+        box1.classList.add("z-50"); 
+    }
+
+    const white = () => { 
+        box1.classList.remove("z-50");
+        box2.classList.add("z-50");
+    }
+
+    const blue = () => {
+        box2.classList.remove("z-50");
+        box3.classList.add("z-50");
+    }
+   </script>
+</body>
+
+</html> 
