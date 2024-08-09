@@ -14,7 +14,8 @@ module.exports = {
           // '2xl': '1536px',
 
          // To completely replace or override the default breakpoints
-              exs:'200px',
+              sabseChota:'200px',
+              exs:'350px',
               sm: '700px',
               md: '1050px',
               lg: '1024px',

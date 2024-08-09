@@ -1,26 +1,37 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import img from './assets/images.png'
+import img from "./assets/images.png";
 
 function App() {
 
-if(sessionStorage.getItem('themes')==='dark'){
-  document.documentElement.classList.toggle('dark')
-}
-
-  const changeThimeMode = () => { 
-    if(sessionStorage.getItem('themes')==='dark'){
-      sessionStorage.setItem('themes','light')
-      document.documentElement.classList.remove('dark')   
+  let [Colour, setColour]=useState("light")
+  const changeThimeMode = () => {
+       
+      let C = Colour;
+      const clr=(C==="light") ?"dark":"light"
+      sessionStorage.setItem("Color", clr );
+      // setColour( document.documentElement.classList.toggle(clr)) 
     }
-    else{
-      document.documentElement.classList.add('dark')
-      sessionStorage.setItem('themes','dark')
-    }
-  }
+
+    useEffect(()=>{
+      let g=sessionStorage.getItem('Color')
+    if(g)setColour(g)
+    },[Colour])
 
 
- 
+  //   if (sessionStorage.getItem("bg_color") === "dark") {
+  //     document.documentElement.classList.toggle("dark");
+  //   }
+
+  //   if (sessionStorage.getItem("bg_color") === "dark") {
+  //     sessionStorage.setItem("bg_color", "light");
+  //     document.documentElement.classList.remove("dark");
+  //   } else {
+  //     sessionStorage.setItem("bg_color", "dark");
+  //     document.documentElement.classList.add("dark");
+  //   }
+  // };
+
   return (
     <>
       <div className="grid grid-cols-4 gap-5 border-solid border-2  border-black max-w-[1300px] dark:bg-gray-600 ">
@@ -31,7 +42,10 @@ if(sessionStorage.getItem('themes')==='dark'){
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOYjphL2t4JfKOXumKTO-YXZLsPb3VlEbAHNcgBPPWOaFs0Su_rkClTJi40zHL5gVpRg&usqp=CAU"
               alt=""
             />
-            <span className="inline-flex items-center justify-center " onClick={changeThimeMode}>
+            <span
+              className="inline-flex items-center justify-center "
+              onClick={changeThimeMode}
+            >
               dark mode
             </span>
             <ul className="flex space-x-5 text-[20px] font-bold cursor-pointer">
@@ -57,11 +71,7 @@ if(sessionStorage.getItem('themes')==='dark'){
           </p>
         </div>
         <div className="border-solid border-2  border-black col-span-2 flex justify-center dark:text-white">
-          <img
-            className="w-[350px] h-[330px]"
-            src={img}
-            alt=""
-          />
+          <img className="w-[350px] h-[330px]" src={img} alt="" />
         </div>
         <div className="border-solid border-2 p-5 border-black row-span-2  text-center text-[20px] text-blue-700 font-bold ">
           Box-4

@@ -672,11 +672,6 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -705,6 +700,11 @@ video {
 .bg-red-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(69 10 10 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -786,18 +786,52 @@ video {
 }
 
 @media (min-width: 200px) {
-  @media not all and (min-width: 700px) {
-    .exs\:max-sm\:size-\[250px\] {
-      width: 250px;
-      height: 250px;
+  @media not all and (min-width: 350px) {
+    .sabseChota\:max-exs\:size-\[100px\] {
+      width: 100px;
+      height: 100px;
     }
 
+    .sabseChota\:max-exs\:size-\[260px\] {
+      width: 260px;
+      height: 260px;
+    }
+
+    .sabseChota\:max-exs\:size-\[200px\] {
+      width: 200px;
+      height: 200px;
+    }
+
+    .sabseChota\:max-exs\:h-\[200px\] {
+      height: 200px;
+    }
+
+    .sabseChota\:max-exs\:w-\[200px\] {
+      width: 200px;
+    }
+
+    .sabseChota\:max-exs\:w-\[260px\] {
+      width: 260px;
+    }
+
+    .sabseChota\:max-exs\:pl-\[45px\] {
+      padding-left: 45px;
+    }
+
+    .sabseChota\:max-exs\:pl-\[25px\] {
+      padding-left: 25px;
+    }
+
+    .sabseChota\:max-exs\:pl-\[15px\] {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 350px) {
+  @media not all and (min-width: 700px) {
     .exs\:max-sm\:size-\[300px\] {
       width: 300px;
-      height: 300px;
-    }
-
-    .exs\:max-sm\:h-\[300px\] {
       height: 300px;
     }
 
@@ -805,16 +839,12 @@ video {
       height: 350px;
     }
 
-    .exs\:max-sm\:w-\[350px\] {
-      width: 350px;
-    }
-
-    .exs\:max-sm\:w-\[250px\] {
-      width: 250px;
-    }
-
     .exs\:max-sm\:w-\[400px\] {
       width: 400px;
+    }
+
+    .exs\:max-sm\:w-\[300px\] {
+      width: 300px;
     }
 
     .exs\:max-sm\:grid-cols-1 {
@@ -824,14 +854,6 @@ video {
     .exs\:max-sm\:object-cover {
       -o-object-fit: cover;
          object-fit: cover;
-    }
-
-    .exs\:max-sm\:pl-\[25px\] {
-      padding-left: 25px;
-    }
-
-    .exs\:max-sm\:pl-\[35px\] {
-      padding-left: 35px;
     }
 
     .exs\:max-sm\:pl-\[45px\] {
