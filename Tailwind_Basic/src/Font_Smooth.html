@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="../dist/output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Popup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
 
-<body >
-    <h1>subpixel-antialiased</h1>
-    <p class="subpixel-antialiased max-w-[1200px] border m-8 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quod
-        impedit odio similique quasi. Asperiores odit, accusantium quas blanditiis impedit non, consequuntur excepturi
-        veniam pariatur corrupti ipsam laboriosam vel vero.</p>
-    <p class="antialiased  max-w-[1200px] border m-8 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, alias, id eveniet
-        aspernatur velit, vero magnam laudantium blanditiis possimus doloribus neque corrupti. Sunt, dolorem ullam
-        aspernatur alias officiis soluta suscipit.</p>
+  <!-- Popup Box Container -->
+  <div id="welcome-popup" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+
+    <!-- Animated Popup Box -->
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto transform scale-0 transition-transform duration-500 ease-out">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Welcome, User!</h2>
+      <p class="text-gray-600 text-center">We are glad to have you here. Explore and enjoy your experience!</p>
+      <div class="mt-6 text-center">
+        <button id="close-btn" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 focus:outline-none">Get Started</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show popup after page loads
+    window.onload = () => {
+      const popup = document.getElementById('welcome-popup');
+      const popupBox = popup.querySelector('div');
+      
+      setTimeout(() => {
+        popup.classList.remove('opacity-0', 'pointer-events-none');
+        popupBox.classList.remove('scale-0');
+        popupBox.classList.add('scale-100');
+      }, 1000); // 1 second delay after loading
+    };
+
+    // Close popup
+    document.getElementById('close-btn').onclick = () => {
+      const popup = document.getElementById('welcome-popup');
+      const popupBox = popup.querySelector('div');
+      
+      popupBox.classList.remove('scale-100');
+      popupBox.classList.add('scale-0');
+      setTimeout(() => {
+        popup.classList.add('opacity-0', 'pointer-events-none');
+      }, 500); // Wait for the animation to complete
+    };
+  </script>
+
 </body>
-
 </html>
